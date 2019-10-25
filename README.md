@@ -1,6 +1,6 @@
 # React Calculator
 ###### Calculator built with react
-
+##### [live Link](https://calulator.herokuapp.com/)
 
 ## Getting Started
 
@@ -24,6 +24,10 @@ npm install
 ```
 npm start
 ```
+### Feature
+
+* Offline mode
+
 
 ## Built With
 
@@ -34,6 +38,7 @@ npm start
 * npm
 * CSS
 * ES6
+* heroku
 
 
 ## Authors
