@@ -24,6 +24,10 @@ npm install
 ```
 npm start
 ```
+### Feature
+
+* Offline mode
+
 
 ## Built With
 
