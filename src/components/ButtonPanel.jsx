@@ -13,7 +13,7 @@ export default () => (
                <Button name={'7'}> </Button>
                <Button name={'8'}> </Button>
                <Button name={'9'}> </Button>
-               <Button name={'X'}> </Button>
+               <Button name={'x'}> </Button>
           </div>
           <div id={'btn_row-three'}>
                <Button name={'4'}> </Button>
@@ -22,10 +22,10 @@ export default () => (
                <Button name={'-'}> </Button>
           </div>
           <div id={'btn_row-four'}>
-               <Button name={'4'}> </Button>
-               <Button name={'5'}> </Button>
-               <Button name={'6'}> </Button>
-               <Button name={'-'}> </Button>
+               <Button name={'1'}> </Button>
+               <Button name={'2'}> </Button>
+               <Button name={'3'}> </Button>
+               <Button name={'+'}> </Button>
           </div>
           <div id={'btn_row-four'}>
                <Button name={'0'}> </Button>
