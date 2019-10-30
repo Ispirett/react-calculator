@@ -9,8 +9,8 @@ function App() {
       <header className="App-header">
         <h1>Epic Calculator</h1>
         <div id={"calculator_container"}>
-          <Display />
-          <ButtonPanel />
+          <Display/>
+          <ButtonPanel/>
         </div>
       </header>
     </div>

@@ -2,11 +2,9 @@ import React, {useState} from 'react'
 import PropTypes from  'prop-types'
 
 const Display = (props) => {
-const [value, setValue] = useState(props.result);
-
 return(
     <div id = {'display'}style={styles.display}>
-        {value}
+        {props.value}
     </div>
 )
 };
@@ -26,8 +24,10 @@ const styles = {
 };
 
 Display.defaultProps ={
-    result: '0'
+    result: '0',
+    value: 0
 };
 Display.propTypes = {
-    result: PropTypes.string
+    result: PropTypes.string,
+    value: PropTypes.number
 };
