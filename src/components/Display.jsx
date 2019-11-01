@@ -14,8 +14,9 @@ const styles = {
     display:{
         backgroundColor: 'rgba(255,255,255,0.81)',
         color: 'black',
+        fontSize: '1.2em',
         padding: '1em',
-        height: '3em',
+        height: '100px',
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'flex-end'
@@ -23,7 +24,7 @@ const styles = {
     }
 };
 
-Display.defaultProps ={
+Display.defaultProps = {
     result: '0',
     value: 0
 };
