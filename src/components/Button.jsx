@@ -3,15 +3,10 @@ import PropTypes from 'prop-types'
 import '../App.css'
 
 const  Button = (props) => {
-    const [wide, setWide] = useState('25%');
-    useEffect(()=>{
-        if(props.wide) setWide('50%');
-    });
-
     const styles = {
           padding: '1em',
             border: 'none',
-            width: wide,
+            width: props.wide ? "50%" : "25%",
             fontSize: '.8em',
             backgroundColor: props.color,
             borderRadius: '2em',
