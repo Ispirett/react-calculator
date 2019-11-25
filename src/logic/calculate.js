@@ -1,6 +1,6 @@
 import operate from "./operate";
 
-export default calculate = (calculator, buttonName) => {
+export default (calculator, buttonName) => {
     let { total, next, operation } = calculator;
     const process = () => {
         switch (buttonName) {

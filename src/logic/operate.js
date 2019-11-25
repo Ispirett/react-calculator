@@ -1,7 +1,6 @@
-import Big from 'big.js'
-
-export default operate = (...args) => {
-    const [numberOne, numberTwo, operation] = args
+import Big from 'big-js'
+export default (...args) => {
+    const [numberOne, numberTwo, operation] = args;
     let numOne = new Big(numberOne);
     let numTwo = new Big(numberTwo);
     const process = () =>{
