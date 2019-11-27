@@ -1,6 +1,6 @@
 export default (buttonName) =>{
     let array = [];
-    if(/[0-9]/.test(buttonName)){
+    if(/[0-9.]/.test(buttonName)){
         if(array.length === 0){
             array.push("num")
         }
