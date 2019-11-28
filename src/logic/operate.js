@@ -1,8 +1,8 @@
 import Big from 'big-js'
 export default (...args) => {
     const [numberOne, numberTwo, operation] = args;
-    let numOne = new Big(Number(numberOne));
-    let numTwo = new Big(Number(numberTwo));
+    let numOne = numberOne;
+    let numTwo = numberTwo;
     const process = () =>{
         switch (operation) {
             case '÷':
@@ -16,7 +16,7 @@ export default (...args) => {
             case '%':
                 return (numTwo * 100 ) / numOne;
             default :
-                return numOne + numTwo
+                return numOne
         }
     };
     return process()

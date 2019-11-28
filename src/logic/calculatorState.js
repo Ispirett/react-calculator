@@ -12,6 +12,7 @@ export default (buttonName) =>{
     if(/[%÷x+-]/.test(buttonName) ){
         array.pop();
         array.push("operation")
+        console.log(buttonName)
     }
 
     if(buttonName === '=' || buttonName === "AC" || buttonName === "+/-"){
