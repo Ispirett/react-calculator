@@ -13,8 +13,8 @@ const  Button = (props) => {
             cursor: 'pointer'
     };
 
-  return  <button
-            class='button'
+  return  <button onClick={props.clickHandler}
+            className='button'
             id={props.id}
             style={styles}>
             {props.name}

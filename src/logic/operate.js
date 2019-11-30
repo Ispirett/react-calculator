@@ -1,22 +1,22 @@
 import Big from 'big-js'
 export default (...args) => {
     const [numberOne, numberTwo, operation] = args;
-    let numOne = new Big(numberOne);
-    let numTwo = new Big(numberTwo);
+    let numOne = numberOne;
+    let numTwo = numberTwo;
     const process = () =>{
         switch (operation) {
             case '÷':
-                return numOne / numTwo;
+                return numTwo === 0 || numOne === 0 ? 0 : numTwo / numOne;
             case 'x':
-                return numOne * numTwo;
+                return  numOne === 0 || numTwo === 0 ? 0 : numOne * numTwo;
             case '+':
                 return numOne + numTwo;
             case '-':
-                return numOne - numTwo;
+                return numTwo - numOne;
             case '%':
-                return numOne % numTwo;
+                return (numTwo * 100 ) / numOne;
             default :
-                return numOne + numTwo
+                return numOne
         }
     };
     return process()
