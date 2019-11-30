@@ -5,7 +5,7 @@ export default (calculator, buttonName) => {
     const process = () => {
         switch (buttonName) {
             case '+/-':
-                return operate(total, -1, 'x') + operate(next, -1, 'x');
+                return operate(total, -1, 'x');
             case 'AC':
                 return 0;
             case '=':

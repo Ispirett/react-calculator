@@ -4,26 +4,30 @@ import ButtonPanel from "./components/ButtonPanel";
 import Display from "./components/Display";
 import calculate from './logic/calculate.js';
 import {default as calState } from "./logic/calculatorState";
+
 function App() {
 const [total, setTotal ] = useState(0);
-const [next, setNext] = useState(null);
+const [next, setNext] = useState(0);
 const [operation, setOperation] = useState(null);
 
-const handleClick = (buttomName ) => {
-    if(calState(buttomName) === 'num'){
-        if (total === 0){
-            setTotal(buttomName);
+const handleClick = (buttonName ) => {
+    if(calState(buttonName) === 'num'){
+        if (total === next){
+            setTotal(buttonName);
         }
-        else setTotal(total + buttomName)
+        else setTotal(total + buttonName)
     }
-    if(calState(buttomName) === "operation" ){
-        setOperation(buttomName);
+    if(calState(buttonName) === "operation" ){
+        setOperation(buttonName);
         setNext(total);
-        setTotal(0);
+
     }
-    if(calState(buttomName) === "special"){
-        let ans = calculate({total, next, operation},buttomName);
-        setTotal(ans)
+    if(calState(buttonName) === "special"){
+        const ans = calculate({total: Number(total), next: Number(next), operation},buttonName);
+        console.log(total, next, operation)
+        setTotal(ans);
+        setNext(0);
+        setOperation(null)
     }
 
 };
